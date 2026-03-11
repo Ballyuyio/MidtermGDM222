@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "GDM-222-Student-main.slnx"
+    "dotnet.defaultSolution": "MidtermGDM222.slnx"
 }

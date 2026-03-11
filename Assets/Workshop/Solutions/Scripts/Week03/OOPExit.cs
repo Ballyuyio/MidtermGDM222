@@ -21,6 +21,13 @@ namespace Solution
                     player.UpdatePosition(this.positionX, this.positionY);
                     mapGenerator.playerScript.enabled = false;
 
+                    int scorerecived = CalculateScore(player);
+                    string playerName = player.Name;
+
+                    PlayerScore data = new PlayerScore(playerName, scorerecived);
+                    leaderboard.RecordScore(data);
+                    leaderboard.ShowleaderBoard();
+                    JSONSaveLoadSystem.SaveGame(data);
                     Debug.Log("You win");
                 }
             }
